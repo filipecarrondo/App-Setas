@@ -1,0 +1,26 @@
+{
+  "name": "gestor-de-setas",
+  "version": "1.0.0",
+  "description": "Gestor de torneios de setas para Windows",
+  "main": "main.js",
+  "author": "filipecarrondo",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "31.7.7",
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "pt.gestordesetas.desktop",
+    "productName": "Gestor de Setas",
+    "asar": true,
+    "files": ["main.js", "index.html", "styles.css", "app.js", "package.json"],
+    "win": {
+      "target": ["portable"],
+      "artifactName": "Gestor-de-Setas-${version}.exe"
+    }
+  }
+}

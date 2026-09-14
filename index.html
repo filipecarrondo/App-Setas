@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'">
+  <title>Gestor de Setas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">◎</div>
+    <div><h1 id="brandTitle">TORNEIO DE SETAS</h1><p>TORNEIO DE SETAS · LIVE SCOREBOARD</p></div>
+  </header>
+  <div class="app-shell">
+    <aside id="sidebar"></aside>
+    <main>
+      <nav class="tabs">
+        <button id="groupsTab">FASE DE GRUPOS</button>
+        <button id="knockoutTab">ELIMINAÇÕES</button>
+      </nav>
+      <section id="content"></section>
+    </main>
+  </div>
+  <div id="modalBackdrop" class="modal-backdrop hidden">
+    <form id="scoreForm" class="modal">
+      <div class="modal-head">
+        <div><span class="eyebrow">REGISTAR RESULTADO</span><h2 id="modalTitle">Resultado</h2></div>
+        <button type="button" id="closeModal" class="icon-button">×</button>
+      </div>
+      <div class="score-grid">
+        <label><span id="playerALabel">Jogador A</span><input id="scoreA" type="number" min="0" max="99" required></label>
+        <b>—</b>
+        <label><span id="playerBLabel">Jogador B</span><input id="scoreB" type="number" min="0" max="99" required></label>
+      </div>
+      <p id="modalError" class="error"></p>
+      <div class="modal-actions">
+        <button type="button" id="clearScore" class="secondary">LIMPAR RESULTADO</button>
+        <button type="submit" class="primary">GUARDAR</button>
+      </div>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
