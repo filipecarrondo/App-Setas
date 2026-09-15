@@ -66,3 +66,12 @@ main{padding:28px 5vw 64px;overflow:hidden}.tabs{display:grid;grid-template-colu
 .dk-section.lower .tournament-bracket .bracket-player.winner{color:#ffcf88;background:rgba(255,188,92,.07)}
 @media(max-width:1150px){.page-head-row{flex-direction:column}.admin-area{width:100%;justify-content:flex-start}}
 @media(max-width:760px){.admin-area{align-items:stretch;flex-direction:column}.admin-tools{display:grid;grid-template-columns:1fr}.admin-button{width:100%}.admin-progress{align-self:flex-start}.board-label{align-items:flex-start;flex-direction:column}.tournament-board,.dk-section{padding:11px}}
+
+/* Ligações visuais entre confrontos */
+.tournament-bracket{position:relative;isolation:isolate}
+.tournament-bracket .bracket-round{position:relative;z-index:1}
+.tournament-bracket .round-title,.tournament-bracket .bracket-match{position:relative;z-index:3}
+.bracket-connectors{position:absolute;left:0;top:0;pointer-events:none;overflow:visible;z-index:2}
+.bracket-connectors path{fill:none;stroke:var(--green);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;opacity:.82;filter:drop-shadow(0 0 3px rgba(6,223,165,.32))}
+.bracket-connectors.amber path{stroke:#ffbc5c;filter:drop-shadow(0 0 3px rgba(255,188,92,.28))}
+.ko-board .bracket-connectors path{stroke-width:3}
