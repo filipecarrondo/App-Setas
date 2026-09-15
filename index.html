@@ -45,9 +45,9 @@
         <button type="button" id="closeModal" class="icon-button">×</button>
       </div>
       <div class="score-grid">
-        <label><span id="playerALabel">Jogador A</span><input id="scoreA" type="number" min="0" max="99" required></label>
+        <label><span id="playerALabel">Jogador A</span><div class="score-input-wrap"><input id="scoreA" type="number" min="0" max="99" required><div class="score-stepper"><button type="button" data-score-step="scoreA" data-delta="1" aria-label="Aumentar resultado">▲</button><button type="button" data-score-step="scoreA" data-delta="-1" aria-label="Diminuir resultado">▼</button></div></div></label>
         <b>—</b>
-        <label><span id="playerBLabel">Jogador B</span><input id="scoreB" type="number" min="0" max="99" required></label>
+        <label><span id="playerBLabel">Jogador B</span><div class="score-input-wrap"><input id="scoreB" type="number" min="0" max="99" required><div class="score-stepper"><button type="button" data-score-step="scoreB" data-delta="1" aria-label="Aumentar resultado">▲</button><button type="button" data-score-step="scoreB" data-delta="-1" aria-label="Diminuir resultado">▼</button></div></div></label>
       </div>
       <p id="modalError" class="error"></p>
       <div class="modal-actions">
