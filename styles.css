@@ -75,3 +75,10 @@ main{padding:28px 5vw 64px;overflow:hidden}.tabs{display:grid;grid-template-colu
 .bracket-connectors path{fill:none;stroke:var(--green);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;opacity:.82;filter:drop-shadow(0 0 3px rgba(6,223,165,.32))}
 .bracket-connectors.amber path{stroke:#ffbc5c;filter:drop-shadow(0 0 3px rgba(255,188,92,.28))}
 .ko-board .bracket-connectors path{stroke-width:3}
+
+/* Bloqueio do KO Direto enquanto a fase de grupos está incompleta */
+.knockout-generate.locked{color:#ffd69a;background:rgba(255,188,92,.08);border-color:rgba(255,188,92,.58)}
+.knockout-generate.locked:hover{color:#181006;background:#ffbc5c;border-color:#ffbc5c}
+.knockout-generate.unlocked{box-shadow:0 0 0 1px rgba(6,223,165,.1),0 7px 18px rgba(6,223,165,.1)}
+.qualifier-note.pending{color:#d5ad70}
+.qualifier-note.complete{color:var(--green);font-weight:750}
