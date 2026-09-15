@@ -22,6 +22,22 @@
       <section id="content"></section>
     </main>
   </div>
+  <div id="playerModalBackdrop" class="modal-backdrop hidden">
+    <form id="playerForm" class="modal player-modal">
+      <div class="modal-head">
+        <div><span class="eyebrow">JOGADOR</span><h2 id="playerModalTitle">Adicionar jogador</h2></div>
+        <button type="button" id="closePlayerModal" class="icon-button">×</button>
+      </div>
+      <label class="form-field"><span>NOME</span><input id="playerNameInput" class="text-input" maxlength="60" autocomplete="off" required></label>
+      <label id="playerGroupField" class="form-field"><span>INSERIR NO GRUPO</span><select id="playerGroupSelect" class="text-input"></select></label>
+      <p id="playerModalError" class="error"></p>
+      <div class="modal-actions">
+        <button type="button" id="cancelPlayerModal" class="secondary">CANCELAR</button>
+        <button type="submit" class="primary">GUARDAR</button>
+      </div>
+    </form>
+  </div>
+
   <div id="modalBackdrop" class="modal-backdrop hidden">
     <form id="scoreForm" class="modal">
       <div class="modal-head">
