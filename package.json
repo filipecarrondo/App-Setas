@@ -1,6 +1,6 @@
 {
   "name": "gestor-de-setas",
-  "version": "1.9.9",
+  "version": "1.10.0",
   "description": "Gestor de torneios de setas para Windows",
   "main": "main.js",
   "author": "filipecarrondo",
