@@ -103,3 +103,20 @@ body,.topbar{background:var(--bg)}
 .match.has-timer{padding-right:38px}.match>.match-timer{position:absolute;left:54%;right:auto;top:50%;width:118px;transform:translate(-50%,-50%)}.match>.match-timer:active{transform:translate(-50%,calc(-50% + 1px))}.bracket-match>.match-timer{display:block;width:100%;height:34px;border-width:1px 0 0;border-radius:0}@keyframes timerPulse{50%{box-shadow:0 0 0 3px rgba(255,49,93,.12)}}
 @media(max-width:1050px){.theme-grid{grid-template-columns:repeat(2,minmax(150px,1fr))}.top-nav-row{flex-wrap:wrap}.admin-nav{margin-left:0}}
 @media(max-width:760px){.top-nav-row{display:block}.top-nav-row .tabs{margin-bottom:8px}.admin-nav{width:100%}.theme-grid,.timer-config{grid-template-columns:1fr}.settings-section{padding:14px}.match.has-timer{padding-right:38px;padding-bottom:48px}.match>.match-timer{left:37px;right:38px;top:auto;bottom:8px;width:auto;transform:none}.match>.match-timer:active{transform:translateY(1px)}}
+
+/* Desempate coletivo por grupo */
+.tie-badge{display:inline-flex;align-items:center;margin-left:8px;padding:2px 6px;border-radius:999px;font-size:9px;line-height:1.2;font-weight:900;letter-spacing:.7px;vertical-align:middle}
+.tie-badge.pending{color:#ffd487;background:rgba(255,183,77,.12);border:1px solid rgba(255,183,77,.38)}
+.tie-badge.resolved{color:var(--green);background:var(--accent-soft);border:1px solid var(--accent-mid)}
+.tie-break-card{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:10px 12px 12px;padding:12px 14px;border:1px solid;border-radius:var(--radius);background:rgba(255,255,255,.018)}
+.tie-break-card.pending{border-color:rgba(255,183,77,.45);background:rgba(255,183,77,.07)}
+.tie-break-card.resolved{border-color:var(--accent-mid);background:var(--accent-soft)}
+.tie-break-card>div{min-width:0;display:flex;flex-direction:column;gap:4px}.tie-break-card strong{font-size:10px;letter-spacing:1.3px;color:#ffd487}.tie-break-card.resolved strong{color:var(--green)}
+.tie-break-card span{color:var(--text);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tie-break-card button{flex:0 0 auto;border:1px solid currentColor;border-radius:var(--radius);background:transparent;color:#ffd487;padding:8px 12px;font-size:10px;font-weight:900;letter-spacing:.7px}.tie-break-card.resolved button{color:var(--green)}
+.tie-break-modal{max-width:560px}.tie-modal-text{color:var(--muted);font-size:13px;margin:0 0 14px}.tie-order-list{display:flex;flex-direction:column;gap:7px;max-height:52vh;overflow:auto;padding-right:3px}
+.tie-order-row{display:grid;grid-template-columns:46px minmax(0,1fr) 78px;align-items:center;gap:10px;padding:10px 11px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
+.tie-order-row>strong{color:var(--green);font-size:14px}.tie-order-row>span{font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.tie-order-row>div{display:flex;gap:5px}
+.tie-order-row button{width:36px;height:32px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);color:var(--text);font-weight:900}.tie-order-row button:hover:not(:disabled){border-color:var(--green);color:var(--green)}.tie-order-row button:disabled{opacity:.28;cursor:default}
+.tie-modal-actions{grid-template-columns:auto 1fr 1.25fr}.danger-soft{color:var(--red)!important;border-color:rgba(255,49,93,.35)!important}
+@media(max-width:760px){.tie-break-card{align-items:flex-start;flex-direction:column}.tie-break-card button{width:100%}.tie-modal-actions{grid-template-columns:1fr}.tie-order-row{grid-template-columns:40px minmax(0,1fr) 78px}}

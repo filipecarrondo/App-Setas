@@ -61,6 +61,21 @@
       </div>
     </form>
   </div>
+  <div id="tieBreakModalBackdrop" class="modal-backdrop hidden">
+    <form id="tieBreakForm" class="modal tie-break-modal">
+      <div class="modal-head">
+        <div><span class="eyebrow">DESEMPATE COLETIVO</span><h2 id="tieBreakModalTitle">Grupo</h2></div>
+        <button type="button" id="closeTieBreakModal" class="icon-button">×</button>
+      </div>
+      <p id="tieBreakModalText" class="tie-modal-text">Ordene os jogadores pela posição final.</p>
+      <div id="tieBreakOrder" class="tie-order-list"></div>
+      <div class="modal-actions tie-modal-actions">
+        <button type="button" id="resetTieBreak" class="secondary danger-soft">REPOR</button>
+        <button type="button" id="cancelTieBreakModal" class="secondary">CANCELAR</button>
+        <button type="submit" class="primary">GUARDAR ORDEM</button>
+      </div>
+    </form>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
