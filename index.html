@@ -76,6 +76,20 @@
       </div>
     </form>
   </div>
+  <div id="adminPasswordBackdrop" class="modal-backdrop hidden">
+    <form id="adminPasswordForm" class="modal admin-password-modal">
+      <div class="modal-head">
+        <div><span class="eyebrow">ÁREA PROTEGIDA</span><h2>Autenticação de administrador</h2></div>
+        <button type="button" id="closeAdminPassword" class="icon-button">×</button>
+      </div>
+      <label class="form-field"><span>PALAVRA-PASSE</span><input id="adminPasswordInput" class="text-input" type="password" autocomplete="current-password" required></label>
+      <p id="adminPasswordError" class="error"></p>
+      <div class="modal-actions">
+        <button type="button" id="cancelAdminPassword" class="secondary">CANCELAR</button>
+        <button type="submit" class="primary">ENTRAR</button>
+      </div>
+    </form>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>

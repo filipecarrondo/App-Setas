@@ -145,3 +145,6 @@ body,.topbar{background:var(--bg)}
 .tie-badge.manual{color:#c9d7ff;background:rgba(117,142,205,.14);border:1px solid rgba(158,178,222,.4)}.tie-break-card.manual{border-color:rgba(158,178,222,.4);background:rgba(117,142,205,.09)}.tie-break-card.manual strong,.tie-break-card.manual button{color:#c9d7ff}
 @media(max-width:1200px){.rules-flow{grid-template-columns:repeat(2,minmax(180px,1fr))}.rules-flow article:last-child{grid-column:1/-1}.rules-grid{grid-template-columns:1fr}.manual-tie-layout{grid-template-columns:1fr}}
 @media(max-width:760px){.admin-subtabs{width:100%;flex-direction:column}.admin-subtabs button{width:100%}.rules-flow{grid-template-columns:1fr}.rules-flow article:last-child{grid-column:auto}.manual-player-list{grid-template-columns:1fr}.manual-tie-status>div{flex-direction:column}}
+
+/* Autenticação de administrador compatível com Electron */
+.admin-password-modal{max-width:440px}.admin-password-modal .form-field{margin-top:4px}.admin-password-modal .text-input{font-size:18px;letter-spacing:3px}.admin-password-modal .error{min-height:18px;margin:8px 0 0}
